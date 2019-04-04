@@ -5,6 +5,10 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.adrianomarinheiro'
+
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -22,7 +26,7 @@ android {
     }
 }
 
-uploadArchives {
+/*uploadArchives {
     repositories {
         mavenDeployer {
             // Altere a linha abaixo para um diretório do seu computador
@@ -34,7 +38,7 @@ uploadArchives {
         }
     }
 }
-task install(dependsOn: uploadArchives)
+task install(dependsOn: uploadArchives)*/
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
